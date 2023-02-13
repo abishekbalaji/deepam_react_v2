@@ -1,0 +1,20 @@
+.nav-contact-strip {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+  background-color: #ffb600;
+  color: white;
+  font-weight: bold;
+  .nav-contact-strip_location {
+  }
+  .nav-contact-strip_social-icons {
+    display: flex;
+    width: 20%;
+    // justify-content: space-around;
+    cursor: pointer;
+
+    .nav-contact-strip_social-icon {
+        padding-left: 40px;
+    }
+  }
+}
