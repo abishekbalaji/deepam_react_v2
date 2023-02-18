@@ -1,0 +1,24 @@
+.nav-social-strip {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+  background-color: #ffb600;
+  color: white;
+  font-weight: bold;
+  .nav-social-strip_location {
+  }
+  .nav-social-strip_social-icons {
+    display: flex;
+    // width: 20%;
+    // justify-content: space-around;
+
+    .nav-social-strip_social-icon {
+      margin-left: 50px;
+      cursor: pointer;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.about_section {
+  padding: 60px 80px;
+  display: flex;
+  justify-content: space-between;
+//   height: 500px;
+
+  .about-section_text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+    .about-section_text-title {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .about-section_text-content {
+        font-size: 1.3rem;
+        margin-bottom: 35px;
+        line-height: 2;
+    }
+
+    .about-section_pointers-container {
+      display: flex;
+      //   flex-direction: column;
+      justify-content: space-between;
+      .about-section_pointers-left-container {
+        display: flex;
+        flex-direction: column;
+        // margin-bottom: 20px;
+      }
+      .about-section_pointers-right-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .about-section_pointers-text {
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  .about-section_image-container {
+    margin-left: 30px;
+    background-image: url("../../assets/machine.jpg");
+    // width: 100%;
+    // height: 100%;
+    width: 40%;
+    // display: flex;
+    // justify-content: center;
+    // height: 200px;
+    // height: auto;
+    position: relative;
+    background-position-y: 80%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    background-clip: content-box;
+    // height: auto;
+  }
+}

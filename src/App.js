@@ -1,10 +1,25 @@
+// import NavSocialStrip from "./components/NavSocialStrip/NavSocialStrip";
+
+import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import NavContactStrip from "./components/NavContactStrip/NavContactStrip";
+import Navigation from "./components/Navigation/Navigation";
+import Home from "./pages/Home/Home";
+import HighReachDemolition from "./pages/Services/HighReachDemolition/HighReachDemolition";
+import Services from "./pages/Services/Services";
 
 const App = () => {
   return (
     <div>
-      <NavContactStrip />
+      <Routes>
+        <Route path="/" element={<Navigation />}>
+          <Route index element={<Home />} />
+          <Route
+            path="/services/high-reach-demolition"
+            element={<HighReachDemolition />}
+          />
+          <Route path="services/*" element={<Services />} />
+        </Route>
+      </Routes>
     </div>
   );
 };

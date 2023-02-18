@@ -1,20 +1,46 @@
 .nav-contact-strip {
+//   width: 100%;
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
-  padding: 10px 80px;
-  background-color: #ffb600;
-  color: white;
-  font-weight: bold;
-  .nav-contact-strip_location {
-  }
-  .nav-contact-strip_social-icons {
-    display: flex;
-    width: 20%;
-    // justify-content: space-around;
-    cursor: pointer;
+  overflow-x: hidden;
 
-    .nav-contact-strip_social-icon {
-        padding-left: 40px;
+  .nav-contact-strip_logo-container {
+    display: flex;
+    margin-right: 200px;
+    align-items: center;
+
+    .nav-contact-strip_brand-name {
+      margin-left: 10px;
+      font-weight: bold;
+      color: #ffb600;
+
+      &:hover {
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav-contact-strip_contact-info-container {
+    display: flex;
+    // flex-direction: column;
+
+    .nav-contact-strip_contact-info {
+      display: flex;
+      flex-direction: column;
+      margin-right: 60px;
+      justify-content: center;
+      font-weight: bold;
+
+      .nav-contact-strip_contact-info-title {
+        margin-bottom: 10px;
+      }
+
+      .nav-contact-strip_contact-info-value {
+        color: #ffb600;
+        font-size: 1.1rem;
+      }
     }
   }
 }

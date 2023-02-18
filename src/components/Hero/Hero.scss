@@ -1,0 +1,52 @@
+.hero_section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-section_title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    .hero-section_title {
+      font-size: 5rem;
+      color: white;
+    }
+    .hero-section_subtitle {
+      margin-top: 30px;
+      font-size: 2rem;
+      color: #ffb600;
+    }
+  }
+
+  .hero-section_overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(26, 26, 29, 0.7);
+    z-index: 2;
+  }
+
+  .hero-section_video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+  }
+}
+
+video {
+  /* override other styles to make responsive */
+  width: 100% !important;
+  height: auto !important;
+  pointer-events: none;
+}
