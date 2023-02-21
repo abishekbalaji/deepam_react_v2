@@ -1,0 +1,32 @@
+.experties_section {
+  padding: 60px 80px;
+
+  .experties-title {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    color: #ffb600;
+  }
+
+  .experties_container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    justify-content: space-between;
+    .expertie_container {
+      width: 48%;
+      text-align: justify;
+      .expertie-title {
+        color: #ffb600;
+        margin-bottom: 25px;
+      }
+      .expertie-content {
+        font-size: 1.3rem;
+        word-spacing: 5px;
+        // text-align: justify;
+        line-height: 1.5;
+      }
+    }
+  }
+}

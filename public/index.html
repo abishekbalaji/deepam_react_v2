@@ -39,26 +39,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-    <script>
-      document.getElementById("videoBG").controls = false;
-      // document.querySelector(
-      //   ".hero-section_video-container"
-      // ).shadowRoot.innerHTML = "";
-      // const subtitle = ;
-      // console.log(subtitle);
-
-      (function () {
-        const words = [
-          
-        ];
-
-        let i = 0;
-        setInterval(() => {
-          document.querySelector(".hero-section_subtitle").fadeOut(() => {
-            this.html(words[(i = (i + 1) % words.length)]).fadeIn();
-          });
-        }, 2700);
-      })();
-    </script>
   </body>
 </html>

@@ -1,0 +1,23 @@
+.service-list_container {
+  margin: 80px 0;
+  .service-list_title {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .service-list_title {
+    margin-bottom: 60px;
+  }
+  .service-list_services-container {
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    // justify-content: space-between;
+    column-gap: 100px;
+    row-gap: 60px;
+  }
+}

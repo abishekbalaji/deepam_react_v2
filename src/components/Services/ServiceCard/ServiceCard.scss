@@ -1,0 +1,21 @@
+.service-card_container {
+  //   padding: 15px;
+  width: 280px;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+
+  .service-card_text-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    .service-card_text-title {
+      color: #ffb600;
+      margin-bottom: 20px;
+    }
+
+    .service-card_text-content {
+      color: white;
+      text-align: justify;
+    }
+  }
+}

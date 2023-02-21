@@ -1,0 +1,30 @@
+.service-section_container {
+  position: relative;
+  background-image: url("../../assets/services-background-small.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .service-section_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    z-index: 1;
+  }
+
+  .service_section {
+    padding: 60px 80px;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+
+    .service-section_title {
+      font-size: 2.8rem;
+      color: white;
+    }
+  }
+}
